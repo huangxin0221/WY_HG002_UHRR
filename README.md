@@ -9,16 +9,16 @@ newgrp docker
 
 ```r
 # method 1: docker pull (online installation requires network connection) slow
-docker pull crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin970221/wy_hg002_uhrr:v1.0.0.0
-docker tag crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin970221/wy_hg002_uhrr:v1.0.0.0 wy_hg002_uhrr:v1.0.0.0
-docker rmi crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin970221/wy_hg002_uhrr:v1.0.0.0
+docker pull crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin970221/wy_hg002_uhrr:v2.1.0.0
+docker tag crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin970221/wy_hg002_uhrr:v2.1.0.0 wy_hg002_uhrr:v2.1.0.0
+docker rmi crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin970221/wy_hg002_uhrr:v2.1.0.0
 # method 2: docker load (local installation network is not needed, but you should provide wy_hg002_uhrr_v1.0.0.0.tar files)
-docker load -i wy_hg002_uhrr_v1.0.0.0.tar
+docker load -i wy_hg002_uhrr_v2.1.0.0.tar
 ```
 ## 2. usage
 ```r
 ### Usage 
-docker run wy_hg002_uhrr:v1.0.0.0 --help
+docker run wy_hg002_uhrr:v2.1.0.0 --help
 ```
 ## 3. demo
 ```r
@@ -27,7 +27,7 @@ newgrp docker
 docker run --rm \
   -v /path/to/hg002/fastq file or fastq directory:/app/input/fastq file or fastq directory \  # HG002 fastq file or directory [if fastq directory is provided, we will automatically detect all fastq.gz/fq.gz files in this directory and merge them]    
   -v /path/to/output/directory:/app/output \                                                  # output directory (make sure output directory is empty)
-  wy_hg002_uhrr:v1.0.0.0 \
+  wy_hg002_uhrr:v2.1.0.0 \
   --fastq_fn1=/app/input/fastq file or fastq directory \                                      # HG002 fastq file or directory (consistent with the previous fastq or folder)
   --sample_ID1="HG002" \                                                                      # HG002 sample id (default: HG002)      
   --output_dir=/app/output/ \                                                                 # output directory (no need to change it) 
