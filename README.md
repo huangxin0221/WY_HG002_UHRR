@@ -15,12 +15,8 @@ docker rmi crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin97
 # method 2: docker load (local installation network is not needed, but you should provide wy_hg002_uhrr_v1.0.0.0.tar files)
 docker load -i wy_hg002_uhrr_v2.1.0.0.tar
 ```
-## 2. usage
-```r
-### Usage 
-docker run wy_hg002_uhrr:v2.1.0.0 --help
 ```
-## 3. demo
+## 3. Usage
 ```r
 # run HG002 sample
 newgrp docker
