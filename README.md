@@ -26,7 +26,7 @@ docker run --rm \
   wy_hg002_uhrr:v2.1.0.0 \
   --fastq_fn1=/app/input/fastq file or fastq directory \                                      # HG002 fastq file or directory (consistent with the previous fastq or folder)
   --sample_ID1="HG002" \                                                                      # HG002 sample id (default: HG002)      
-  --output_dir=/app/output \                                                                 # output directory (no need to change it) 
+  --output_dir=/app/output \                                                                  # output directory (no need to change it) 
   --threads=20                                                                                # number of threads (default: 20) 
 # run UHRR
 newgrp docker
@@ -36,6 +36,6 @@ docker run --rm \
   wy_hg002_uhrr:v2.1.0.0 \
   --fastq_fn2=/app/input/fastq filename or fastq directory \                                 # UHRR fastq file or directory (consistent with the previous fastq or folder)
   --sample_ID2="UHRR" \                                                                      # UHRR sample id (default: UHRR)
-  --output_dir=/app/output \                                                                # output directory (no need to change it) 
+  --output_dir=/app/output \                                                                 # output directory (no need to change it) 
   --threads=20                                                                               # number of threads (default: 20) 
 ```
