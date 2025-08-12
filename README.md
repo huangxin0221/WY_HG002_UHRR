@@ -33,7 +33,7 @@ newgrp docker
 docker run --rm \
   -v /path/to/uhrr/fastq file or fastq directory:/app/input/fastq file or fastq directory \  # UHRR fastq file or directory [if fastq directory is provided, we will automatically detect all fastq.gz/fq.gz files in this directory and merge them]     
   -v /path/to/output/directory:/app/output \                                                 # output directory (make sure output directory is empty)
-  wy_hg002_uhrr:v1.0.0.0 \
+  wy_hg002_uhrr:v2.1.0.0 \
   --fastq_fn2=/app/input/fastq filename or RUN ID \                                          # UHRR fastq file or directory (consistent with the previous fastq or folder)
   --sample_ID2="UHRR" \                                                                      # UHRR sample id (default: UHRR)
   --output_dir=/app/output/ \                                                                # output directory (no need to change it) 
