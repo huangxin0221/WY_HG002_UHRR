@@ -8,11 +8,11 @@ newgrp docker
 ### （2）software install
 
 ```r
-# method 1: docker pull (online installation requires network connection) slow
+# method 1: docker pull
 docker pull crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin970221/wy_hg002_uhrr:v2.1.0.0
 docker tag crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin970221/wy_hg002_uhrr:v2.1.0.0 wy_hg002_uhrr:v2.1.0.0
 docker rmi crpi-7a9vueif1b7jprb7.cn-hangzhou.personal.cr.aliyuncs.com/huangxin970221/wy_hg002_uhrr:v2.1.0.0
-# method 2: docker load (local installation network is not needed, but you should provide wy_hg002_uhrr_v1.0.0.0.tar files)
+# method 2: docker load
 docker load -i wy_hg002_uhrr_v2.1.0.0.tar
 ```
 
